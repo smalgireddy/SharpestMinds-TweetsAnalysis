@@ -7,15 +7,15 @@ As part of this analysis, the data is collected in the form of json format, that
 Irregularities in data: I found few irregularities in the label_data colum values across 3 data frames. i.e. eventhogh the dataset is of food tweets, it has values of relevant, irrelevant in their label_data column which isn't the expected behaviour. SO i filtered out thos irregularities. After filtering the data,
             tweets_food : healthy, unhealthy, junk (labels)
  NLP Algorithms:
-  1. Convolution neural networks with pre-trained Glove word embeddings (200 dimensional embeddings)
-  2. Convolution neural networks without word embedding weights using word2vec CBOW model
-  3. Convolution neural networks with word2vec-Skip gram word embeddings
-  4. Gradient Boosting CLassifier with doc2vec word embedding features.
- Reported Accuracy:
-  pretrained Glove + CNN : 74%
-  word2vec-CBOW + CNN : 81%
-  word2vec-skipgram + CNN : 96%
-  doc2vec+GradientBoostingClassifier : 54%
+  * Convolution neural networks with pre-trained Glove word embeddings (200 dimensional embeddings)
+  * Convolution neural networks without word embedding weights using word2vec CBOW model
+  * Convolution neural networks with word2vec-Skip gram word embeddings
+  * Gradient Boosting CLassifier with doc2vec word embedding features.
+###<br><b>Reported Accuracy:</b>
+  * pretrained Glove + CNN : 74%
+  * word2vec-CBOW + CNN : 81%
+  * word2vec-skipgram + CNN : 96%
+  * doc2vec+GradientBoostingClassifier : 54%
  
  Performance Analysis:
   1. CNN with pretrained Glove didn't performa as expected as there are so many irregularities within the text. So most of the words don't have their corresponding embedding wieghts.
