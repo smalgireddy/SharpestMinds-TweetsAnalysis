@@ -22,5 +22,5 @@ Irregularities in data: I found few irregularities in the label_data colum value
   2. CNN with word2vec-skipgram model gave the best accuracy as the word2vec model was trained with theour own dataset and used resulted word embeddings as features for the CNN classifier.
   3. Doc2vec couldn't do well on the limited dataset as Doc2vec model is suggestible in only huge data avalaiility cases.
  
- reference: for pretrained glove word embedding model. please download the pre trained glove word embeddings from Stanford NLP library link.
+ reference: for pretrained glove word embedding model, please download the glove word embeddings from Stanford NLP library link.
  Download link: https://nlp.stanford.edu/projects/glove/
