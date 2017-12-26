@@ -6,6 +6,7 @@ Contextual Tweets classification - SharpestMind evaluation
 As part of this analysis, the data is collected in the form of json format, that collected data is loaded into dataframes. Apart from the existed columns, I added a new column to the existed dataframe with the tweet content of that corresponding row. Removed the special charactes and mentioned urls (since the url is in random format) with help of regular expression patterns, and transformed the tweet text into alpha numeric sentences. After text formatting, filetered the dataframes into 3 different dataframes (food, borne and exercises) based on their cotext column attribute of the data.
 <br><b>Irregularities in data:</b> I found few irregularities in the label_data colum values across 3 data frames. i.e. eventhogh the dataset is of food tweets, it has values of relevant, irrelevant in their label_data column which isn't the expected behaviour. SO i filtered out thos irregularities. After filtering the data,
             tweets_food : healthy, unhealthy, junk (labels)
+            
 <br><b>NLP Algorithms:</b>
   * Convolution neural networks with pre-trained Glove word embeddings (200 dimensional embeddings)
   * Convolution neural networks without word embedding weights using word2vec CBOW model
