@@ -9,12 +9,12 @@ As part of this analysis, the data is collected in the form of json format, that
             
 <br><b>NLP Algorithms:</b>
   * Convolution neural networks with pre-trained Glove word embeddings (200 dimensional embeddings)
-  * Convolution neural networks without word embedding weights using word2vec CBOW model
+  * Convolution neural networks without pretrained word embedding weights using word2vec model
   * Convolution neural networks with word2vec-Skip gram word embeddings
   * Gradient Boosting CLassifier with doc2vec word embedding features.
 <br><b>Reported Accuracy:</b>
   * pretrained Glove + CNN : 74%
-  * word2vec-CBOW + CNN : 81%
+  * word2vec-without pretrained word embeddings + CNN : 81%
   * word2vec-skipgram + CNN : 96%
   * doc2vec+GradientBoostingClassifier : 54%
  
